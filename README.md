@@ -1,6 +1,5 @@
-# Drone Animation 
+# Flymation: Interactive Animation for Flying Robots
 
-Quadrotors are among the most popular robotic platform in research. Many people spend a lot of time on visualizing the drone trajectory. State-of-the-art tools include Matlab, Python, ROS, and Blender. In this work, we present an open-source project called FlightmareAnimation for trajectory visualization and animation. Download the Unity standalone and use it directly without installing additional pacakges.
-
+Trajectory visualization and animation play critical roles in robotics research. However, existing data visualization and animation tools often lack flexibility, scalability, and versatility, resulting in limited capability to fully explore and analyze flight data. To address this limitation, we introduce **Flymation**, a new flight trajectory visualization and animation tool. Built on the Unity3D engine, **Flymation** is an intuitive and interactive tool that allows users to visualize and analyze flight data in real time. Users can import data from various sources, including flight simulators and real-world data, and create customized visualizations with high-quality rendering. With **Flymation**, users can choose between trajectory snapshot and animation; both provide valuable insights into the behavior of the underlying autonomous system. **Flymation** represents an exciting step toward visualizing and interacting with large-scale data in robotics research.
 
 ![](Images/animation.gif)
