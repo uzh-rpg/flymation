@@ -1,0 +1,22 @@
+{
+    "RPGArena": false,
+    "start_idx": 1,
+    "color_csv": "/",
+    "sim_time": 0.02,
+    "MyPrefabIDs": {
+        "robot_prefab_id": "RacingDrone" 
+    },
+    "DataFolder":{
+        "use_data_folders": false,
+        "traj_folder": "/",
+        "static_obj_folder": "/",
+        "dynamic_obj_folder": "/"
+    },
+    "CameraConfig": {
+        "ID": "camera",
+        "channels": 3,
+        "width": 640,
+        "height": 480,
+        "fov": 90.0
+    }
+}

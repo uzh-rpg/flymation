@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8638909755990179799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8638909755990179803}
+  - component: {fileID: 8638909755990179802}
+  - component: {fileID: 1181571163}
+  - component: {fileID: 1181571165}
+  - component: {fileID: 1181571167}
+  m_Layer: 0
+  m_Name: Camera_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &8638909755990179803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8638909755990179799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9070163, y: 2.0581074, z: 0.026814222}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8638909755990179802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8638909755990179799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd1f9fe92fe2ed4d877a6ce1da9d8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pose_client_port: 10253
+  video_client_port: 10254
+  rpg_dsim_version: 
+  client_ip: 127.0.0.1
+  HD_camera: {fileID: 2060161435559445602, guid: 7cfb8a134551f154996646e3ed7f5153, type: 3}
+  quad_template: {fileID: 2153435341231490519, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+  gate_template: {fileID: 734509419429374909, guid: 47a07cecde5e143f3af18a4feb257bb9, type: 3}
+  splash_screen: {fileID: 0}
+  PointCloudSaved: {fileID: 0}
+  input_ip: {fileID: 0}
+  enable_flying_cam: 1
+--- !u!114 &1181571163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8638909755990179799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45bd982e0bfbe550eacf0e2c601e00c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uberReplacementShader: {fileID: 4800000, guid: 171e6e515a12e4a298dce708924e98ba, type: 3}
+  opticalFlowShader: {fileID: 4800000, guid: 2a970eca3c9e84f13b5b616e530a7919, type: 3}
+  opticalFlowSensitivity: 1
+  image_modes:
+  - depth
+  - object_segment
+  - optical_flow
+--- !u!114 &1181571165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8638909755990179799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d5c60994030d04e813b55bcda675e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera_template: {fileID: 2060161435559445602, guid: 7cfb8a134551f154996646e3ed7f5153, type: 3}
+  time_lines:
+  - {fileID: 2955433088038018134, guid: e930915fa6e68f50db77e516abc6d00e, type: 3}
+  - {fileID: 1129091183553144169, guid: 72ee0355cb883223d8e0e7eed535bd51, type: 3}
+  - {fileID: 8994653877548046176, guid: ac194b2e943bce649ba384717ded9d8e, type: 3}
+--- !u!114 &1181571167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8638909755990179799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220392f0afe4519a7a17f9ebf5d70231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: {x: 20, y: 20, z: 20}
+  origin: {x: 0, y: 0, z: 0}
+  resolution: 0.15
+  path: pointcloud_data/
+  fileName: default
