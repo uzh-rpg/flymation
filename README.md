@@ -12,7 +12,7 @@ If you use this code in a publication, please cite project.
 
 ```
 @misc{song2023flymation,
-    author = {Song, Yunlong and Scaramuuza, Davide},
+    author = {Song, Yunlong and Scaramuzza, Davide},
     title = {Flymation: Interactive Animation for Flying Robots},
     year = {2023},
     howpublished = {GitHub Repository},
